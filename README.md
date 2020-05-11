@@ -378,7 +378,10 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 ---
 
-**Réponse :**  
+**Réponse :**  A l'aide des commande que vous voyez sur l'image peut voir que le protocol VPN mis en place est ESP pour l'encapuslation des paquets et IKE pour la néociation des clefs (ISAKMP <-> IKE )
+
+![r1](./images/srx8-r1.png)
+
 
 ---
 
