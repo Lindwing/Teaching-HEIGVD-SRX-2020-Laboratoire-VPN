@@ -163,12 +163,13 @@ Pour déclencher et pratiquer les captures vous allez « pinger » votre routeur
 -	Une trace sniffer (Wireshark) à la sortie du routeur R2 vers Internet. Si vous ne savez pas utiliser Wireshark avec eve-ng, référez-vous au document explicatif eve-ng. Le filtre de **capture** (attention, c'est un filtre de **capture** et pas un filtre d'affichage) suivant peut vous aider avec votre capture : `ip host 193.100.100.1`. 
 -	Les messages de R1 avec `debug ip icmp`.
 
-
 **Question 3: Montrez vous captures**
 
 ---
 
-**Screenshots :**  
+**Screenshots :**  ![r1](./images/srx3-r1.png)
+
+![r1](./images/srx3-wi.jpg)
 
 ---
 
@@ -239,23 +240,25 @@ Vous pouvez consulter l’état de votre configuration IKE avec les commandes su
 
 ---
 
-**Réponse :**  TODO TEXT
+**Réponse :** 
 
 ![r1](./images/srx4-r1.png)
 
 ![r2](./images/srx4-r2.png)
 
----
+On peut voir que les deux routeurs on le "proposal" avec une priorité de 20 et R2 a aussi un "proposal" de priorité 10. On peut voir que celle à 10 utilise du triple DES et fait partie du Diffie-Hellman group 2, ce qui n'est pas recommandé. Celle à 20 utilise du AES ce qui est bien, mais fait partie du Diffie-Hellman group 5 ce qui n'est pas top.
 
 **Question 5: Utilisez la commande `show crypto isakmp key` et faites part de vos remarques :**
 
 ---
 
-**Réponse :**  TODO TEXT
+**Réponse :**  
 
 ![r1](./images/srx5-r1.png)
 
 ![r2](./images/srx5-r2.png)
+
+On peut voir que les clé on été générés, ce sont ces clés qui vont être echangés lors de l'IKE.
 
 ---
 
@@ -356,7 +359,9 @@ Nous avons aussi eu des warnings:
 
 ![wa](./images/srx6-wa.png)
 
-TODO CAPTURE WIRESHARK
+![wi](./images/srx6-wi.png)
+
+Dans wireshark on voit qu’avant que commencer la communication, il y a le démarrage de la communication VPN avec des échanges de SA.
 
 ---
 
@@ -410,15 +415,14 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 ---
 
-**Réponse :**  
+**Réponse :**  Le paquet initial est authentifié grâce au protocole ESP. L'algorithme utilisé est SHA1
 
 ---
-
 
 **Question 12: Expliquez quelles sont les parties du paquet qui sont protégées en intégrité. Donnez l’algorithme cryptographique correspondant.**
 
 ---
 
-**Réponse :**  
+**Réponse :**  Le paquet initial est protégé en intégrité grâce au protocole ESP. L'algorithme utilisé est SHA1
 
 ---
