@@ -382,15 +382,17 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 ![r1](./images/srx8-r1.png)
 
-
 ---
 
 
 **Question 9: Expliquez si c’est un mode tunnel ou transport.**
 
+
 ---
 
-**Réponse :**  
+**Réponse :**  On peut voir sur l'image sous will negotiate = { Tunnel, }, c'est donc un tunnel
+
+![r1](./images/srx8-r1.png)
 
 ---
 
