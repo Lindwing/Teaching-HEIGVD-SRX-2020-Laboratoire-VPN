@@ -348,7 +348,11 @@ Pensez à démarrer votre sniffer sur la sortie du routeur R2 vers internet avan
 
 ---
 
-**Réponse :**  
+**Réponse :**  Apres avoir configuré le tout on a ping R1 depuis le poste et avons obtenue ceci a l'aide de debug ip icmp
+
+![r1](./images/srx6-r1.png)
+
+TODO CAPTURE WIRESHARK
 
 ---
 
