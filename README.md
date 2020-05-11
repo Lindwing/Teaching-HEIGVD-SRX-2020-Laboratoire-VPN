@@ -352,6 +352,10 @@ Pensez à démarrer votre sniffer sur la sortie du routeur R2 vers internet avan
 
 ![r1](./images/srx6-r1.png)
 
+Nous avons aussi eu des warnings: 
+
+![wa](./images/srx6-wa.png)
+
 TODO CAPTURE WIRESHARK
 
 ---
