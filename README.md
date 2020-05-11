@@ -167,7 +167,9 @@ Pour déclencher et pratiquer les captures vous allez « pinger » votre routeur
 
 ---
 
-**Screenshots :**  ![r1](./images/srx3-r1.png)
+**Screenshots :**  
+
+![r1](./images/srx3-r1.png)
 
 ![r1](./images/srx3-wi.jpg)
 
