@@ -369,7 +369,18 @@ Dans wireshark on voit qu’avant que commencer la communication, il y a le dém
 
 ---
 
-**Réponse :**  
+**Réponse :**  Dans la configuration de IKE on fixe une lifetime à 1800, c’est-à-dire 30 minutes. On renouvèle les SA de la phase 1 toutes les 30 minutes.
+
+Dans la configuration d’IPsec la lifetime est fixé à 600 (5 min) ou à 2560 KB de données transférées. Les SA de la phase 2 seront renouvelé plus régulièrement que celles de la phase 1. Il vaut mieux avoir des renouvellements de la phase 2 plus court que ceux de la phase 1, comme expliqué à ce lien : https://community.sophos.com/products/unified-threat-management/f/vpn-site-to-site-and-remote-access/55795/ike-and-ipsec-sa-lifetime-values
+
+ 
+
+On a configuré le keepalive à 30 sec. Il va vérifier toute les 30 secondes le « peer » du VPN est capable de recevoir le trafic, on a configuré pour qu’il y aille 3 essais avant d’arrêter la communication.
+
+
+ Dans IPsec on a configuré un idle-time à 900 (15 min). Ce paramètre permet de supprimer les SA s’il n’y a pas eu d’activité pendant 15 minutes. Cela permet de supprimer un SA avant d’arriver à la fin de la durée de vie global (ici 30 minutes).
+
+Source : https://www.cisco.com/c/en/us/td/docs/ios/sec_secure_connectivity/configuration/guide/convert/sec_ipsec_data_plane_15_1_book/sec_ipsec_idle_tmrs.pdf
 
 ---
 
