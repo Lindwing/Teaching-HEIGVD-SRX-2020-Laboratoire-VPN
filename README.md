@@ -378,7 +378,7 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 ---
 
-**Réponse :**  A l'aide des commande que vous voyez sur l'image peut voir que le protocol VPN mis en place est ESP pour l'encapuslation des paquets et IKE pour la néociation des clefs (ISAKMP <-> IKE )
+**Réponse :**  A l'aide des commande que vous voyez sur l'image peut voir que le Protocol VPN mis en place est ESP pour encapsulation des paquets et IKE pour la négociation des clefs (ISAKMP <-> IKE )
 
 ![r1](./images/srx8-r1.png)
 
@@ -387,10 +387,9 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 **Question 9: Expliquez si c’est un mode tunnel ou transport.**
 
-
 ---
 
-**Réponse :**  On peut voir sur l'image sous will negotiate = { Tunnel, }, c'est donc un tunnel
+**Réponse :**  On peut voir sur l'image sous will negotiate = { Tunnel, } (pour STRONG), c'est donc un tunnel
 
 ![r1](./images/srx8-r1.png)
 
@@ -401,10 +400,11 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 ---
 
-**Réponse :**  
+**Réponse :**  Ce qui est chiffré en mode tunnel en ESP est intégralité du paquet, et l'algo est aes 192 (la ligne transform set STRONG: { esp-**192-aes** esp-sha-hmac })
+
+![r1](./images/srx8-r1.png)
 
 ---
-
 
 **Question 11: Expliquez quelles sont les parties du paquet qui sont authentifiées. Donnez l’algorithme cryptographique correspondant.**
 
