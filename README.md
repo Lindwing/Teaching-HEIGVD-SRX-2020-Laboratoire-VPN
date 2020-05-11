@@ -239,16 +239,23 @@ Vous pouvez consulter l’état de votre configuration IKE avec les commandes su
 
 ---
 
-**Réponse :**  
+**Réponse :**  TODO TEXT
+
+![r1](./images/srx4-r1.png)
+
+![r2](./images/srx4-r2.png)
 
 ---
-
 
 **Question 5: Utilisez la commande `show crypto isakmp key` et faites part de vos remarques :**
 
 ---
 
-**Réponse :**  
+**Réponse :**  TODO TEXT
+
+![r1](./images/srx5-r1.png)
+
+![r2](./images/srx5-r2.png)
 
 ---
 
