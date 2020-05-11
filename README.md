@@ -145,7 +145,7 @@ Pour votre topologie il est utile de contrôler la connectivité entre :
 
 ---
 
-**Réponse :**  ils sont tous passé sauf ceux pour 172.17.1.1, mais apres un `ip dhcp` depuis le poste `<<VPC>>` pour lui donner une addresse, tout marche
+**Réponse :**  ils sont tous passé sauf ceux pour 172.17.1.1, mais après un `ip dhcp` depuis le poste `<<VPC>>` pour lui donner une adresse, tout marche
 
 ---
 
@@ -378,7 +378,7 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 ---
 
-**Réponse :**  A l'aide des commande que vous voyez sur l'image peut voir que le Protocol VPN mis en place est ESP pour encapsulation des paquets et IKE pour la négociation des clefs (ISAKMP <-> IKE )
+**Réponse :**  A l'aide des commande que vous voyez sur l'image on peut voir que le Protocol VPN mis en place est ESP pour l'encapsulation des paquets et IKE pour la négociation des clefs (ISAKMP <-> IKE )
 
 ![r1](./images/srx8-r1.png)
 
@@ -389,7 +389,7 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 ---
 
-**Réponse :**  On peut voir sur l'image sous will negotiate = { Tunnel, } (pour STRONG), c'est donc un tunnel
+**Réponse :**  On peut voir sur l'image sous will negotiate = { **Tunnel**, } (pour STRONG), c'est donc un tunnel
 
 ![r1](./images/srx8-r1.png)
 
@@ -400,7 +400,7 @@ En vous appuyant sur les notions vues en cours et vos observations en laboratoir
 
 ---
 
-**Réponse :**  Ce qui est chiffré en mode tunnel en ESP est intégralité du paquet, et l'algo est aes 192 (la ligne transform set STRONG: { esp-**192-aes** esp-sha-hmac })
+**Réponse :**  Ce qui est chiffré en mode tunnel en ESP est l'intégralité du paquet, et l'algo est aes 192 (la ligne transform set STRONG: { esp-**192-aes** esp-sha-hmac })
 
 ![r1](./images/srx8-r1.png)
 
